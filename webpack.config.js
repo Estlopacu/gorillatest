@@ -4,7 +4,7 @@ module.exports = {
     app: ["./app/app.js"]
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname),
     filename: "bundle.js"
   },
   module: {
