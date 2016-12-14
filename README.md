@@ -6,10 +6,10 @@ npm install
 
 ## Usage
 
-#For DEV
+###For DEV
 npm start
 
-#For PROD
+###For PROD
 npm run prod
 
 ## Credits
