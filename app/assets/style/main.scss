@@ -1,0 +1,105 @@
+$color-white: #fff;
+$color-black: #000;
+$color-gray-background: #eceaec;
+$color-gray: #939194;
+$color-green: #61b956;
+$color-blue: #4e86a8;
+
+.main{
+  .panel{
+    width: 700px;
+    height: 260px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius:15px;
+    background-color: $color-gray-background;
+    border: 1px solid $color-black;
+  }
+  .panel-body{
+    padding: 25px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+  .panel-heading{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius:10px;
+  }
+  .inner-body{
+    padding: 10px;
+    border: 1px solid $color-black;
+    border-radius:10px;
+    background-color: $color-white;
+  }
+  .row-container{
+    display: inline-block;
+    vertical-align:top;
+  }
+  .reached-text{
+    font-size: 14px;
+    color: $color-gray;
+    width: 20%;
+    h4{
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 19px;
+    }
+  }
+  .progress-container{
+    margin-top: 20px;
+    width: 55%;
+    position: relative;
+    .progress-bar{
+      background-color: $color-green;
+    }
+    .initial-value{
+      text-align: center;
+      font-size: 17px;
+      font-weight: bold;
+      position: absolute;
+      left: 142px;
+      top: 18px;
+    }
+  }
+  .gray-box{
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-color: gray;
+    width: 15%;
+    border: 1px solid #000;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .info-text{
+    margin-top: 30px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: $color-gray;
+  }
+  .glyphicon-info-sign{
+    color: $color-blue;
+    font-size: 22px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+// animations
+@keyframes barAnimate {
+  from{ width: 0};
+  to{ width: 56%};
+}
+
+.progress-bar{
+  animation-name: barAnimate;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
