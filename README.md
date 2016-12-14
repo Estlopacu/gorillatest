@@ -10,7 +10,7 @@ npm install
 npm start
 
 ###For PROD
-npm run prod
+npm run dev
 
 ## Credits
 
